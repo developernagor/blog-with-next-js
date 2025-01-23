@@ -7,7 +7,7 @@ const Profile = async() => {
 
   return (
     <div>
-      <h1>Welcome  {user.given_name}, to your profile!</h1>
+      <h1>Welcome to your profile!</h1>
     </div>
   )
 }
