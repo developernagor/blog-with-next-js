@@ -1,9 +1,13 @@
 import React from 'react'
 
-const SinglePost = () => {
+const SinglePost = async({params}) => {
+    const result = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
+    const post = await result.json();
   return (
     <div>
-      SinglePost
+      <h2>Post id: {post.id}</h2>
+      <h2>Post title: {post.title}</h2>
+      <h2>Post description: {post.description}</h2>
     </div>
   )
 }
