@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("http://localhost:3000")
+  url      = env("postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public")
 }
 model User {
   id    Int    @id @default(autoincrement())  
