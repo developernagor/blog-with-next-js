@@ -1,7 +1,8 @@
 import React from 'react'
 
 const SinglePost = async({params}) => {
-    const result = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
+    const {id} = await params;
+    const result = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     const post = await result.json();
   return (
     <div>
