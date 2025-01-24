@@ -7,8 +7,8 @@ const Navbar = async() => {
   const user = await getUser();
 
   return (
-    <div className='bg-gray-500 h-14 text-white'>
-      <nav className='container mx-auto flex justify-between items-center'>
+    <div className='bg-gray-500 text-white'>
+      <nav className='container mx-auto flex justify-between items-center h-16'>
         <div>
           <h1>Logo</h1>
         </div>

@@ -6,8 +6,8 @@ const Blog = async() => {
     const posts = await result.json();
 
   return (
-    <div>
-      <h2>Blog Posts: {posts.length}</h2>
+    <div className='my-10 px-6'>
+      <h2 className='mb-6 text-4xl'>Blog Posts: {posts.length}</h2>
 
       {
         posts.map((post)=> 
