@@ -6,9 +6,12 @@ const SinglePost = async({params}) => {
     const post = await result.json();
   return (
     <div>
-      <h2>Post id: {post.id}</h2>
-      <h2>Post title: {post.title}</h2>
-      <h2>Post description: {post.description}</h2>
+      <h2 className='text-3xl font-bold my-6 text-center border-b-2'>Post Details</h2>
+      <div className='max-w-3xl mx-auto border rounded-2xl p-4'>
+      <p className='text-2xl mb-2'><strong>Post id:</strong> {post.id}</p>
+      <p className='text-2xl mb-2'><strong>Post title:</strong> {post.title}</p>
+      <p className='text-2xl mb-2'><strong>Post description:</strong> {post.body}</p>
+      </div>
     </div>
   )
 }

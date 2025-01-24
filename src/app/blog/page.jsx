@@ -11,7 +11,7 @@ const Blog = async() => {
 
       {
         posts.map((post)=> 
-        <li key={post.id}>
+        <li key={post.id} className='text-2xl mb-2'>
             <Link href={`/blog/${post.id}`}>{post.title}</Link>
         </li>
         )
